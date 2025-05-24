@@ -23,10 +23,9 @@ int main()
     cout << p.f << " " << p.s << endl;
 
 
-    /*we  can declare,
-    pair<datatype, datatype> variable; 
-    then we can print the value as variable.first and variable.second 
-    we can declare pair in two ways */
+    /*STL pair syntax: pair<datatype, datatype> variable; 
+    After declaring our pair we can print the value as variable.first and variable.second 
+    we can initialize pair in two ways */
 
     pair <int, string> p2(2, "graph");  //1st
     pair <string, int> p3;  //2nd
