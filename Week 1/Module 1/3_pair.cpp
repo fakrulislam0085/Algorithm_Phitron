@@ -1,26 +1,37 @@
 #include <bits/stdc++.h>
 using namespace std;
-class Pair
+class myPair
 {
     public:
-        int first, second;
+        int f, s;
     
     void make_pair(int a, int b)
     {
-        first = a;
-        second = b;
+        f = a;
+        s = b;
     }
 };
 int main()
 {
-    Pair p;
+    myPair p;
     //1st
     // p.first = 10;
     // p.second = 30;
 
-   //2nd
+   //or call our function
     p.make_pair(10,20);
+    cout << p.f << " " << p.s << endl;
 
-    cout << p.first << " " << p.second << endl;
+
+    /*we  can declare,
+    pair<datatype, datatype> variable; 
+    then we can print the value as variable.first and variable.second 
+    we can declare pair in two ways */
+
+    pair <int, string> p2(2, "graph");  //1st
+    pair <string, int> p3;  //2nd
+    p3 = {"tree", 5}; 
+    cout << p2.first << " " << p2.second << endl << p3.first << " " << p3.second << endl; 
+
     return 0;
 }
