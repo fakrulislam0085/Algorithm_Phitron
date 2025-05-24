@@ -2,9 +2,6 @@
 using namespace std;
 int main()
 {
-    
-    
-    
     /*STL pair syntax: pair<datatype, datatype> variable; 
     After declaring our pair we can print the value as variable.first and variable.second 
      */
