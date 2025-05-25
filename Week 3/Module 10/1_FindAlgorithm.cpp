@@ -17,6 +17,8 @@ void dsuInitialize(int n)
 int leaderFind(int node)
 {
     if(par[node] == -1) return node;
+    
+    // Path compression using recursive call
     int leader = leaderFind(par[node]);
     par[node] = leader;
     return leader;
