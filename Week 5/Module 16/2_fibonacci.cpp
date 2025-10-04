@@ -5,7 +5,6 @@ using namespace std;
 const ll N = 1e6 + 10;
 ll dp[N];
 
-
 //top-down technique
 ll fibo(ll n)
 {
@@ -24,6 +23,7 @@ ll fibo(ll n)
     dp[n] = sum;
     return sum;
 }
+
 int main()
 {
     ll n;
