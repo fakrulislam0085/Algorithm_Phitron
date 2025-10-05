@@ -57,6 +57,7 @@ void UnionByRank(int p, int q)
         level[parentP]++;
     }
 }
+
 int main()
 {
     initialize(8);
@@ -77,7 +78,6 @@ int main()
             UnionByRank(1, i);
         }
     }
-
-
     return 0;
+
 }
